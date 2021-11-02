@@ -2,6 +2,7 @@ import "./App.css";
 import styled from "styled-components";
 import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
+import Feature from "./Components/Feature";
 
 const Container = styled.div`
   height: 100vh;
@@ -21,11 +22,16 @@ const IntoShape = styled.div`
 
 function App() {
   return (
-    <Container>
-      <Navbar />
-      <Intro />
-      <IntoShape />
-    </Container>
+    <>
+      <Container>
+        <Navbar />
+        <Intro />
+        <IntoShape />
+      </Container>
+      <Container>
+        <Feature />
+      </Container>
+    </>
   );
 }
 
